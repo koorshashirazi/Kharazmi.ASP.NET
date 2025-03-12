@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <Description>Policy based authorization to Asp.Net, WebApi</Description>
+    <Authors>Koorsha Shirazi</Authors>
+    <Product>Kharazmi.Security.Authorization.WebApi</Product>
+    <Copyright>Copyright @ 2018 KARAZMI, by Koorsha Shirazi.</Copyright>
+    <PackageIconUrl>https://github.com/koorsha/Shared/blob/master/MvcUnitlty.Core.png?raw=true</PackageIconUrl>
+    <PackageTags>Microsoft, AspNet, AspNetWebApi, WebApi, Owin, HttpNet, Authorization Policy Based</PackageTags>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kharazmi.Security" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.3" />
+    <PackageReference Include="Microsoft.Owin" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+</Project>

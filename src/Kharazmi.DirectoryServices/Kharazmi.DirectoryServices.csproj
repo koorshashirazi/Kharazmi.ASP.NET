@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Authors>Koorsha Shirazi</Authors>
+        <Company>Kharazmi</Company>
+        <Title>Kharazmi.DirectoryServices</Title>
+        <AssemblyName>Kharazmi.DirectoryServices</AssemblyName>
+        <RootNamespace>Kharazmi.DirectoryServices</RootNamespace>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <PackageIconUrl>https://github.com/koorsha/Shared/blob/master/MvcUnitlty.Core.png?raw=true</PackageIconUrl>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Description>A package, which includes helpful auxiliary methods. </Description>
+        <Copyright>Copyright @ 2018 KARAZMI, by Koorsha Shirazi.</Copyright>
+        <PackageTags>Microsoft, AspNet, LDAP, Active Dirctory, Directory Services</PackageTags>
+        <Version>1.0.0</Version>
+        <PackageReleaseNotes>Update</PackageReleaseNotes>
+        <PackageVersion>1.0.1</PackageVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="System.DirectoryServices" />
+      <Reference Include="System.DirectoryServices.AccountManagement" />
+      <Reference Include="System.DirectoryServices.Protocols" />
+      <Reference Include="System.Web" />
+    </ItemGroup>
+
+</Project>

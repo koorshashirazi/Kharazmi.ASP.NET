@@ -1,0 +1,16 @@
+﻿using System;
+using System.Globalization;
+using System.Resources;
+using System.Threading;
+
+namespace Mvc.Utility.Core.Extensions
+{
+    public static partial class Common
+    {
+        public static string GetResource(this Type resourceType, string key)
+        {
+            return new ResourceManager(resourceType).GetString(key,
+                new CultureInfo(Thread.CurrentThread.CurrentCulture.Name));
+        }
+    }
+}

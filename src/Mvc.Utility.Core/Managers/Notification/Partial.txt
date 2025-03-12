@@ -1,0 +1,46 @@
+﻿@using OnlineAkzept.Common.Constraints
+@using OnlineAkzept.Core.Managers.Notification
+
+@model System.Web.Mvc.TempDataDictionary
+
+
+    @if (Model.ContainsKey(ApplicationConfigConstraint.APPLICATION_NOTIFICATION_NAME))
+    {
+        if (Model[ApplicationConfigConstraint.APPLICATION_NOTIFICATION_NAME] is NotificationManager toastr)
+        {
+
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+
+                    window.toastr.options.closeButton = '@toastr.ShowCloseButton';
+                    window.toastr.options.newestOnTop = '@toastr.ShowNewestOnTop';
+
+                    @foreach (NotificationModel message in toastr.ToastMessages)
+                    {
+
+                        string toastTypeValue = message.ToastType.ToString("F").ToLower();
+
+                        @: var optionsOverride = { };
+
+                        if (message.IsSticky)
+                        {
+                            @:optionsOverride.timeOut = 0;
+                            @:optionsOverride.extendedTimeout = 0;
+                        }
+
+                        @:window.toastr['@toastTypeValue']('@message.Message', '@message.Title', optionsOverride);
+
+                    }
+
+                });
+
+            </script>
+
+        }
+        Model.Remove(ApplicationConfigConstraint.APPLICATION_NOTIFICATION_NAME);
+
+    }
+
+
+

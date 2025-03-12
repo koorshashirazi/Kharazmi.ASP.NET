@@ -1,0 +1,180 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Koorsha Shirazi</Authors>
+    <Company>Koorsha Shirazi</Company>
+    <Description>A package, which includes helpful auxiliary methods.
+With this package, software development is faster.
+
+Features:
+- Extensions
+- Helpers
+- Filters
+    * AjaxOnlyAttribute
+    * ContentTypeFilterAttribute
+    * GlobalizationFilterAttribute
+    * PasswordValidatorAttribute
+    * PreventDuplicateRequestAttribute
+    * RequiredIfAttribute
+    * RequiredIfNotNullAttribute
+    * SessionEndLifeTimeFilterAttribute
+
+
+- Managers   
+    * ManagerBase
+    * CacheManager
+    * CertificatesManager
+    * HtmlManager
+    * HttpManager
+    * InstanceManager
+    * JsonManager
+    * NotificationManager
+    * NullManager
+    * ResultManager
+    * SecurityManager
+    * SessionManager
+    * RazorManager
+    * WebConfigManager
+    * UrlManager
+    * PdfManager
+    * Authorization Policy Based Manager
+
+- ModelBinders
+    * DecimalModelBinder
+    * HtmlValidationModelBinder  
+    
+- Providers
+    * XmlSerializerProvider (abstract)</Description>
+    <Copyright>Copyright @ 2018 KARAZMI, by Koorsha Shirazi.</Copyright>
+    <PackageIconUrl>https://github.com/koorsha/Shared/blob/master/MvcUnitlty.Core.png?raw=true</PackageIconUrl>
+    <PackageTags>Microsoft, AspNet, AspNetMvc, Mvc, Owin, HttpNet, XML,  HTML parser, Html To PDF, Authorization Policy Based</PackageTags>
+    <LangVersion>latest</LangVersion>
+    <Version>1.3.7</Version>
+    <PackageReleaseNotes>Update Memebershipe</PackageReleaseNotes>
+    <PackageVersion>1.3.8</PackageVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Managers\PolicyBasedManager - Copy\**" />
+    <EmbeddedResource Remove="Managers\PolicyBasedManager - Copy\**" />
+    <None Remove="Managers\PolicyBasedManager - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Kharazmi.HtmlToPdf\ConversionSource.cs">
+      <Link>Managers\PdfManager\ConversionSource.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Managers\PdfManager\Assets\Kharazmi.HtmlToPdf.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Managers\PdfManager\Assets\Kharazmi.HtmlToPdf.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.1.3" />
+    <PackageReference Include="Fasterflect.Netstandard" Version="1.0.9" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="2.10.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Owin" Version="1.0.0" />
+    <PackageReference Include="System.Linq.Dynamic" Version="1.0.7" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="4.0.0" />
+    <PackageReference Include="TimeZoneConverter" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.4.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net461\lib\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Managers\StateManager\ParameterConversionResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ParameterConversionResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Managers\StateManager\StateConfigurationResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StateConfigurationResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Managers\StateManager\StateMachineResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StateMachineResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Managers\StateManager\StateRepresentationResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StateRepresentationResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ShareResources.Designer.cs">
+      <DependentUpon>ShareResources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Managers\StateManager\ParameterConversionResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ParameterConversionResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Managers\StateManager\StateConfigurationResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StateConfigurationResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Managers\StateManager\StateMachineResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StateMachineResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Managers\StateManager\StateRepresentationResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StateRepresentationResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ShareResources.resx">
+      <LastGenOutput>ShareResources.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Managers\CookieManager\" />
+    <Folder Include="Managers\HtmlManager\" />
+    <Folder Include="Managers\LinqToLdap\Contrib\" />
+    <Folder Include="Managers\ResultManager\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Authors>Koorsha Shirazi</Authors>
+        <Company>Kharazmi</Company>
+        <Title>Kharazmi.AspNetCore.Core</Title>
+        <AssemblyName>Kharazmi.AspNetMvc.Core</AssemblyName>
+        <RootNamespace>Kharazmi.AspNetMvc.Core</RootNamespace>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <PackageIconUrl>https://github.com/koorsha/Shared/blob/master/MvcUnitlty.Core.png?raw=true</PackageIconUrl>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Description>A package, which includes helpful auxiliary methods. </Description>
+        <Copyright>Copyright @ 2018 KARAZMI, by Koorsha Shirazi.</Copyright>
+        <PackageTags>Microsoft, AspNet, AspNetMvc, Mvc, Owin, HttpNet, XML, HTML parser, Html To PDF, Authorization Policy Based</PackageTags>
+        <Version>1.0.1</Version>
+        <PackageReleaseNotes>Update</PackageReleaseNotes>
+        <PackageVersion>1.0.2</PackageVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Managers\PdfManager\Assets\Kharazmi.HtmlToPdf.exe" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="..\Kharazmi.HtmlToPdf\ConversionSource.cs">
+            <Link>Managers\PdfManager\ConversionSource.cs</Link>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.2" />
+        <PackageReference Include="Microsoft.Owin" Version="4.0.1" />
+        <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.0.1" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+        <PackageReference Include="Owin" Version="1.0.0" />
+        <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+        <PackageReference Include="System.Net.Http" Version="4.0.0" />
+        <PackageReference Include="System.Text.Encodings.Web" Version="4.0.0" />
+        <PackageReference Include="TimeZoneConverter" Version="3.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="System.Transactions" />
+        <Reference Include="System.Web" />
+        <Reference Include="System.Configuration" />
+    </ItemGroup>
+
+</Project>

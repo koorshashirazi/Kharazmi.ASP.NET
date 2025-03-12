@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Authors>Koorsha Shirazi</Authors>
+    <Company>Kharazmi</Company>
+    <Copyright>Copyright @ 2018 KARAZMI, by Koorsha Shirazi.</Copyright>
+    <PackageIconUrl>https://github.com/koorsha/Shared/blob/master/MvcUnitlty.Core.png?raw=true</PackageIconUrl>
+    <PackageReleaseNotes>Refactoring code using Mvc.Utility.Core Package</PackageReleaseNotes>
+    <PackageTags>DynamicProxy, Interceptors,Autofac</PackageTags>
+    <Description>Kharazmi.Aop.Autofac provides a method interception framework called “DynamicProxy.”</Description>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" />
+    <PackageReference Include="Mvc.Utility.Core" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+</Project>

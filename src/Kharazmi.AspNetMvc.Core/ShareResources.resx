@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accessdenied" xml:space="preserve">
+    <value>Access denied</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Confirm Email</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Passwort Wiederholung</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>HMP Software Solutions GmbH. All Rights reserved.</value>
+  </data>
+  <data name="DisplayAddDocuments" xml:space="preserve">
+    <value>Add decision papers</value>
+  </data>
+  <data name="DisplyDropFilesHere" xml:space="preserve">
+    <value>Drag-and-drop the decision papers here to upload them</value>
+  </data>
+  <data name="DuplicateRequest" xml:space="preserve">
+    <value>Looks like you accidentally tried to double post.</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorAllowGetJosn" xml:space="preserve">
+    <value>JSON GET is not allowed.</value>
+  </data>
+  <data name="ErrorAllowHtmlTag" xml:space="preserve">
+    <value>Sie dürfen keine HTML-Tags verwenden.</value>
+  </data>
+  <data name="ErrorMessageAuthorizationRequired401" xml:space="preserve">
+    <value>This server could not verify your authorized to access the doument requested.</value>
+  </data>
+  <data name="ErrorMessageBadGateway502" xml:space="preserve">
+    <value>The server returned an invalid or incomplete response.</value>
+  </data>
+  <data name="ErrorMessageBadRequest400" xml:space="preserve">
+    <value>Your browser send a request that server could not understand.</value>
+  </data>
+  <data name="ErrorMessageConfirmPassword" xml:space="preserve">
+    <value>Passwords do not match.</value>
+  </data>
+  <data name="ErrorMessageForbidden403" xml:space="preserve">
+    <value>Your don't have permission to access on this server.</value>
+  </data>
+  <data name="ErrorMessageGatewayTimeOut504" xml:space="preserve">
+    <value>The gateway did not receive a timely response from the upstream server.</value>
+  </data>
+  <data name="ErrorMessageInternalServerError500" xml:space="preserve">
+    <value>The server encountered an internal error or misconfiguration and was unable to complete your request.</value>
+  </data>
+  <data name="ErrorMessageInvalidLoginAttempt" xml:space="preserve">
+    <value>Invalid login attempt.</value>
+  </data>
+  <data name="ErrorMessageInvalidUser" xml:space="preserve">
+    <value>User not found or code is not valid.</value>
+  </data>
+  <data name="ErrorMessageLockedOut" xml:space="preserve">
+    <value>Your account is locked! Please after  {0}  minute Try again</value>
+  </data>
+  <data name="ErrorMessageMinStringLength" xml:space="preserve">
+    <value>{0}can not be less than {1} character.</value>
+  </data>
+  <data name="ErrorMessageNotFound404" xml:space="preserve">
+    <value>The request URL was not found on this server.</value>
+  </data>
+  <data name="ErrorMessageRedirection301" xml:space="preserve">
+    <value>The browser can not to redirect.</value>
+  </data>
+  <data name="ErrorMessageRequestTimeOut408" xml:space="preserve">
+    <value>Your browser didn't send a complete request in time.</value>
+  </data>
+  <data name="ErrorMessageRequired" xml:space="preserve">
+    <value>{0} is required</value>
+  </data>
+  <data name="ErrorMessageRequireDigit" xml:space="preserve">
+    <value>Please use the numbers in the password.</value>
+  </data>
+  <data name="ErrorMessageRequireLowercase" xml:space="preserve">
+    <value>Use lowercase letters for passwords.</value>
+  </data>
+  <data name="ErrorMessageRequireNonLetterOrDigit" xml:space="preserve">
+    <value>For security reasons, use at least one non-numeric password character.</value>
+  </data>
+  <data name="ErrorMessageRequireUppercase" xml:space="preserve">
+    <value>Use uppercase letters for passwords.</value>
+  </data>
+  <data name="ErrorMessageStringLength" xml:space="preserve">
+    <value>The maximum value for {0} should be between {2} and {1}.</value>
+  </data>
+  <data name="ErrorRemoveDocumentFail" xml:space="preserve">
+    <value>Removing document failed!</value>
+  </data>
+  <data name="ErrorTileRedirection301" xml:space="preserve">
+    <value>Redirection Problem</value>
+  </data>
+  <data name="ErrorTitleAuthorizationRequired401" xml:space="preserve">
+    <value>Authorization Required</value>
+  </data>
+  <data name="ErrorTitleBadGateway502" xml:space="preserve">
+    <value>Bad Gateway</value>
+  </data>
+  <data name="ErrorTitleBadRequest400" xml:space="preserve">
+    <value>Bad Request</value>
+  </data>
+  <data name="ErrorTitleForbidden403" xml:space="preserve">
+    <value>Forbidden</value>
+  </data>
+  <data name="ErrorTitleGatewayTimeOut504" xml:space="preserve">
+    <value>Gateway Time-Out</value>
+  </data>
+  <data name="ErrorTitleInternalServerError500" xml:space="preserve">
+    <value>Internal Server Error</value>
+  </data>
+  <data name="ErrorTitleNotFound404" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="ErrorTitleRequestTimeOut408" xml:space="preserve">
+    <value>Request Time-Out</value>
+  </data>
+  <data name="ErrorUploadDocumentFail" xml:space="preserve">
+    <value>Upload document failed!</value>
+  </data>
+  <data name="Family" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="ForwardingOfResponsibility" xml:space="preserve">
+    <value>Forwarding of responsibility</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Geh Zurück</value>
+  </data>
+  <data name="GoHome" xml:space="preserve">
+    <value>Go Home</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HomeTeaser" xml:space="preserve">
+    <value>All employees are required to document in writing and archive the basis for business decisions regarding the selection of suppliers and product ranges as well as communications with suppliers. Use the following archiving function to archive documents related to decisions.</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>invalid</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Logoff" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MessageConfirmEmail" xml:space="preserve">
+    <value>Please confirm your account by clicking</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PlaceHolderSelectLanguage" xml:space="preserve">
+    <value>Select language...</value>
+  </data>
+  <data name="Rememberme" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SessionExpire" xml:space="preserve">
+    <value>Session Expire</value>
+  </data>
+  <data name="SessionExpireMessage" xml:space="preserve">
+    <value>Your session time has ended. The page is refresh for up to 5 seconds.</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="UnknownProperty" xml:space="preserve">
+    <value>Unknown property {0}</value>
+  </data>
+  <data name="UploadCompleted" xml:space="preserve">
+    <value>Upload Completed</value>
+  </data>
+  <data name="UploadFiles" xml:space="preserve">
+    <value>Upload Files</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="TryLockError" xml:space="preserve">
+    <value>Could not obtain locks</value>
+  </data>
+  <data name="ErrorMessageDecimalNumber" xml:space="preserve">
+    <value>Enter the desired number in the correct format (for example [12/11])</value>
+  </data>
+  <data name="ArgumentNullException" xml:space="preserve">
+    <value>{0} can't be null.</value>
+  </data>
+  <data name="DiscoveryDocumentResponse" xml:space="preserve">
+    <value>Problem accessing the Token Response endpoint.\nError Message: {0}</value>
+  </data>
+  <data name="Exception_AuthorizationPolicyEmpty" xml:space="preserve">
+    <value>AuthorizationPolicy must have at least one requirement.</value>
+  </data>
+  <data name="Exception_AuthorizationPolicyNotFound" xml:space="preserve">
+    <value>The AuthorizationPolicy named: '{0}' was not found.</value>
+  </data>
+  <data name="Exception_RoleRequirementEmpty" xml:space="preserve">
+    <value>At least one role must be specified.</value>
+  </data>
+  <data name="TokenResponse" xml:space="preserve">
+    <value>Problem accessing the Token Response endpoint.\nError Message: {0}\nHttp Error StatusCode: {1}</value>
+  </data>
+  <data name="UserInfoResponse" xml:space="preserve">
+    <value>Problem accessing the UserInfo endpoint.\nError Message: {0}\nHttp Error StatusCode: {0}</value>
+  </data>
+  <data name="NullReferenceException" xml:space="preserve">
+    <value>{0} is null.</value>
+  </data>
+  <data name="ErrorInvalidAuthorizeEndpoint" xml:space="preserve">
+    <value>The property is a combination of "AuthorizeEndpoint" and "BaseAddress".
+Make sure the correct address is entered.</value>
+  </data>
+  <data name="InvalidCastException" xml:space="preserve">
+    <value>You can't cast that value to a {0}!</value>
+  </data>
+  <data name="InvalidFormat" xml:space="preserve">
+    <value>Invalid output format</value>
+  </data>
+  <data name="ParameterRequired" xml:space="preserve">
+    <value>Parameter is required</value>
+  </data>
+  <data name="ErrorPathFileNull" xml:space="preserve">
+    <value>File path not specified.</value>
+  </data>
+  <data name="ErrorTheOwinEnvironmentDictionaryWasNull" xml:space="preserve">
+    <value>The owin environment dictionary was null</value>
+  </data>
+  <data name="Exception_AuthorizationOptionsMustNotBeNull" xml:space="preserve">
+    <value>AuthorizationOptions must not be null.  Your resource authorization may be set up incorrectly.</value>
+  </data>
+  <data name="Exception_AuthorizationPolicyNotFound1" xml:space="preserve">
+    <value>The AuthorizationPolicy named: '{0}' was not found.</value>
+  </data>
+  <data name="Exception_PleaseSetupOwinResourceAuthorizationInYourStartupFile" xml:space="preserve">
+    <value>Please setup owin resource authorization in your startup file</value>
+  </data>
+  <data name="LogAuthorizationFailedForUser" xml:space="preserve">
+    <value>Authorization failed for user: {0}</value>
+  </data>
+  <data name="LogAuthorizationSucceededForUser" xml:space="preserve">
+    <value>Authorization was successful for user: {0}</value>
+  </data>
+  <data name="FormatError_UnsupportedJSONToken" xml:space="preserve">
+    <value>Unsupported JSONToken</value>
+  </data>
+</root>
